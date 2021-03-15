@@ -1,0 +1,69 @@
+ #I was trying to open some csv files I downloaded but I had no luck
+14  cat directory.csv
+   15  cat forestfires.csv
+   16  cd desktop
+   17  File>Open
+   18  cd dir
+   19  cd dir Desktop
+   20  cat forestfires.csv
+   21  cd Desktop
+   22  ls
+   23  mv
+   24  mv Desktop
+   25  mv --help
+#created a file to for my own csv 
+   26  touch test.txt
+   27  ls
+   28  cat test.txt
+   29  vi /path/to/test.txt
+# It didn't let me save my changes to the file
+#"can't open file for writing" is the error i got
+   30  cat test.txt
+   31  vi /path/to/test.txt
+   32  cat catman
+   33  session.log
+   34  ls
+   35  cat test.txt
+   36  micro test.tx
+   37  micro test.txt
+   38  touch names.csv
+   39  ls
+   40  vi /path/to/test.txt
+   41  cat test.txt
+   42  nano test.txt
+#created my own csv file and used nano to edit it. No issues changing it 
+   43  nano names.csv
+   44  cat names.csv
+   45  parse.sh names.csv
+   46  parsecsv.sh names.csv
+   47  vi bin/parsecsv.sh
+   48  nano parsecsv.sh
+   49  parsecsv.sh names.csv
+   50  locate session.log
+   51  ls
+   52  cat session.log
+   53  cd session.log
+   54  history 10
+   55  history 69
+   56  locate session.log
+   57  cat session.log
+   58  cd/var/log
+   59  history
+#extracts data subsets with certain parameters
+#this prints all columns and rows of the csv file
+   62  head names.csv
+# this prints first 3 rows
+   63  head -n 3 names.csv
+   64  nano names.csv
+   65  wc -1 names.csv
+#if you know the specific lines of interest, you can use this command to print them
+   66  sed -n "3,4 p" names.csv
+#prints all the employees who are factory workers, this command also creates a new csv file
+#which puts the output of this command to the new factory.csv file
+   67  grep "Factory" names.csv > factory.csv
+   68  cat factory.csv
+#this command prints out specified columns in your csv file
+   69  cut -d , -f 1,2-5 names.csv
+   70  cut -d , -f 1,2-3 names.csv
+#this command prints the last two rows of the csv file
+   71 tail -n 2 names.csv

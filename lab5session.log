@@ -59,6 +59,7 @@
 #if you know the specific lines of interest, you can use this command to print them
    66  sed -n "3,4 p" names.csv
 #prints all the employees who are factory workers, this command also creates a new csv file
+#Which employees work in the Factory?
 #which puts the output of this command to the new factory.csv file
    67  grep "Factory" names.csv > factory.csv
    68  cat factory.csv
